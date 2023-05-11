@@ -1,3 +1,16 @@
+### Programming Naming Convention
+
+```quote
+PascalCase
+camelCase
+camelCase
+SNAKE_CASE
+
+Genauere Information findet man unter folgendem Link:
+[Programming Naming Convention Link](https://www.freecodecamp.org/news/programming-naming-conventions-explained/)
+
+```
+
 ### Variablen
 
 Variablen sind Platzhalter für Werte. Sie können Werte speichern und wieder abrufen. Variablen können verändert werden. Variablen können auch Konstanten sein, die nicht verändert werden können.
@@ -12,7 +25,7 @@ var variablenNamen = 'Wert';
 
 ### Zuweisungsoperatoren
 
-#### Genauere Erklärung findet man in der grundlagen.js
+#### Genaue Erklärung findet man in der grundlagen.js
 
 ```quote
 =   <-- Zuweisungsoperator
@@ -46,4 +59,35 @@ var variablenNamen = 'Wert';
 *   <-- Rechenoperator (Multiplikation)
 /   <-- Rechenoperator (Division)
 %   <-- Rechenoperator (Modulo)
+```
+
+### Logische Operatoren
+
+```quote
+&&  <-- Logischer Operator (und)
+||  <-- Logischer Operator (oder)
+!   <-- Logischer Operator (nicht)
+```
+
+### Schleifen
+
+```javascript
+// for Schleife
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+}
+
+// while Schleife
+let i = 0;
+while (i < 10) {
+    console.log(i);
+    i++;
+}
+
+// do while Schleife
+let i = 0;
+do {
+    console.log(i);
+    i++;
+} while (i < 10);
 ```

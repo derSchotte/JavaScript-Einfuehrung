@@ -41,6 +41,8 @@ let text2;
 // boolean-Variablen können nur die Werte true oder false annehmen
 let istWahr = true;
 
+
+//#region Zuweisungsoperatoren
 // Zuweisungsoperatoren
 // = ist der Zuweisungsoperator
 // Er weist der Variablen auf der linken Seite den Wert auf der rechten Seite zu
@@ -81,50 +83,9 @@ zahl2++;
 // -- ist der Zuweisungsoperator für Dekrementierung
 // Er verringert den Wert der Variablen auf der linken Seite um 1
 zahl2--;
+//#endregion
 
-// Rechenoperatoren
-// + ist der Rechenoperator für Addition
-// Er addiert den Wert auf der linken Seite zum Wert auf der rechten Seite
-// und gibt das Ergebnis zurück
-zahl2 + zahl;
-zahl2 + 1;
-3 + 5;
-
-// - ist der Rechenoperator für Subtraktion
-// Er subtrahiert den Wert auf der rechten Seite vom Wert auf der linken Seite
-// und gibt das Ergebnis zurück
-zahl2 - zahl;
-zahl2 - 1;
-3 - 5;
-
-// * ist der Rechenoperator für Multiplikation
-// Er multipliziert den Wert auf der rechten Seite mit dem Wert auf der linken Seite
-// und gibt das Ergebnis zurück
-zahl2 * zahl;
-zahl2 * 1;
-3 * 5;
-
-// / ist der Rechenoperator für Division
-// Er dividiert den Wert auf der linken Seite durch den Wert auf der rechten Seite
-// und gibt das Ergebnis zurück
-zahl2 / zahl;
-zahl2 / 1;
-3 / 5;
-
-// % ist der Rechenoperator für Modulo
-// Er dividiert den Wert auf der linken Seite durch den Wert auf der rechten Seite
-// und gibt den Rest der Division zurück
-zahl2 % zahl;
-zahl2 % 1;
-3 % 5;
-
-// ** ist der Rechenoperator für Potenzierung
-// Er potenziert den Wert auf der linken Seite mit dem Wert auf der rechten Seite
-// und gibt das Ergebnis zurück
-zahl2 ** zahl;
-zahl2 ** 1;
-3 ** 5;
-
+//#region Vergleichsoperatoren
 // Vergleichsoperatoren
 // == ist der Vergleichsoperator für Gleichheit
 // Er vergleicht den Wert auf der linken Seite mit dem Wert auf der rechten Seite
@@ -193,6 +154,68 @@ zahl2 >= 1;
 zahl2 <= zahl;
 zahl2 <= 1;
 3 <= 5;
+//#endregion
+
+//#region Rechenoperatoren
+// Rechenoperatoren
+// + ist der Rechenoperator für Addition
+// Er addiert den Wert auf der linken Seite zum Wert auf der rechten Seite
+// und gibt das Ergebnis zurück
+zahl2 + zahl;
+zahl2 + 1;
+3 + 5;
+
+// - ist der Rechenoperator für Subtraktion
+// Er subtrahiert den Wert auf der rechten Seite vom Wert auf der linken Seite
+// und gibt das Ergebnis zurück
+zahl2 - zahl;
+zahl2 - 1;
+3 - 5;
+
+// * ist der Rechenoperator für Multiplikation
+// Er multipliziert den Wert auf der rechten Seite mit dem Wert auf der linken Seite
+// und gibt das Ergebnis zurück
+zahl2 * zahl;
+zahl2 * 1;
+3 * 5;
+
+// / ist der Rechenoperator für Division
+// Er dividiert den Wert auf der linken Seite durch den Wert auf der rechten Seite
+// und gibt das Ergebnis zurück
+zahl2 / zahl;
+zahl2 / 1;
+3 / 5;
+
+// % ist der Rechenoperator für Modulo
+// Er dividiert den Wert auf der linken Seite durch den Wert auf der rechten Seite
+// und gibt den Rest der Division zurück
+zahl2 % zahl;
+zahl2 % 1;
+3 % 5;
+
+// ** ist der Rechenoperator für Potenzierung
+// Er potenziert den Wert auf der linken Seite mit dem Wert auf der rechten Seite
+// und gibt das Ergebnis zurück
+zahl2 ** zahl;
+zahl2 ** 1;
+3 ** 5;
+//#endregion
 
 // Logische Operatoren
 // && ist der logische Operator für Und
+// Er gibt true zurück, wenn beide Werte true sind
+// und false zurück, wenn mindestens einer der beiden Werte false ist
+istWahr && true;
+istWahr && false;
+
+// || ist der logische Operator für Oder
+// Er gibt true zurück, wenn mindestens einer der beiden Werte true ist
+// und false zurück, wenn beide Werte false sind
+istWahr || true;
+istWahr || false;
+
+// ! ist der logische Operator für Nicht
+// Er gibt true zurück, wenn der Wert false ist
+// und false zurück, wenn der Wert true ist
+!istWahr;
+

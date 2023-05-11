@@ -201,6 +201,7 @@ zahl2 ** 1;
 3 ** 5;
 //#endregion
 
+//#region Logische Operatoren
 // Logische Operatoren
 // && ist der logische Operator für Und
 // Er gibt true zurück, wenn beide Werte true sind
@@ -218,4 +219,76 @@ istWahr || false;
 // Er gibt true zurück, wenn der Wert false ist
 // und false zurück, wenn der Wert true ist
 !istWahr;
+//#endregion
 
+
+// Scheifen
+// for-Schleife
+// Die for-Schleife wird verwendet, wenn die Anzahl der Durchläufe bekannt ist
+
+// Die for-Schleife besteht aus drei Teilen:
+// 1. Initialisierung
+// 2. Bedingung
+// 3. Inkrementierung
+
+// Die Initialisierung wird einmal ausgeführt, bevor die Schleife startet
+// Die Bedingung wird vor jedem Durchlauf überprüft
+// Wenn die Bedingung true zurückgibt, wird der Schleifenkörper ausgeführt
+// Wenn die Bedingung false zurückgibt, wird die Schleife beendet
+// Die Inkrementierung wird nach jedem Durchlauf ausgeführt
+
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+}
+
+// Die Inkrementierung kann auch vor dem Durchlauf ausgeführt werden
+// Gleiches gilt für die anderen Anwendungsbeispiele
+for (let i = 0; i < 10; ++i) {
+    console.log(i);
+}
+
+// Die for-Schleife kann auch rückwärts laufen
+for (let i = 10; i > 0; i--) {
+    console.log(i);
+}
+
+// Die for-Schleife kann auch mit Variablen arbeiten
+let anzahlDurchlaeufe = 10;
+for (let i = 0; i < anzahlDurchlaeufe; i++) {
+    console.log(i);
+}
+
+// Die Inkrementierung kann auch innerhalb der Schleife erfolgen
+for (let i = 0; i < 10;) {
+    console.log(i);
+    i++;
+}
+
+// Die Bedingung kann auch innerhalb der Schleife erfolgen
+let i = 0;
+for (; i < 10; i++) {
+    console.log(i);
+}
+
+// While-Schleife
+// Die While-Schleife wird verwendet, wenn die Anzahl der Durchläufe nicht bekannt ist
+// Die Bedingung wird vor jedem Durchlauf überprüft
+// Wenn die Bedingung true zurückgibt, wird der Schleifenkörper ausgeführt
+// Wenn die Bedingung false zurückgibt, wird die Schleife beendet
+let j = 0;
+while (j < 10) {
+    console.log(j);
+    j++;
+}
+
+// Do-While-Schleife
+// Die Do-While-Schleife wird verwendet, wenn die Anzahl der Durchläufe nicht bekannt ist
+// Der Schleifenkörper wird mindestens einmal ausgeführt
+// Die Bedingung wird nach jedem Durchlauf überprüft
+// Wenn die Bedingung true zurückgibt, wird der Schleifenkörper erneut ausgeführt
+// Wenn die Bedingung false zurückgibt, wird die Schleife beendet
+let k = 0;
+do {
+    console.log(k);
+    k++;
+} while (k < 10);

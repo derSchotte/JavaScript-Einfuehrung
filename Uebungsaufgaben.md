@@ -36,4 +36,10 @@ Lassen sie sich die Sekunden in der Konsole ausgeben.
 
 ## Übung 4
 
-...
+_Berechnung der Fläsche eines Rechtecks. Länge: 15, Breite: 10_
+
+```quote
+Erstellen sie dementsprechend eine Variable für die Länge und eine Variable für die Breite.
+
+Geben sie die Fläche in der Konsole aus.
+```

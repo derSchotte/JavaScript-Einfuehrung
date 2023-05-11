@@ -2,9 +2,9 @@
 // alert("Hallo Welt! Ich bin ein Popup!");
 
 // Eine Meldung mit dem Text "Hallo Welt! Ich bin eine Meldung in der Konsole!" wird in der Konsole ausgegeben
-console.log("Hallo Welt! Ich bin eine Meldung in der Konsole! - Welche in der main.js steht!");
+console.log("Hallo Welt! Ich bin eine Meldung in der Konsole! - Welche in der grundlagen.js steht!");
 
-
+//#region Variablen
 // Variablen in JavaScript sind Datentypunsicher
 // Das bedeutet, dass eine Variable verschiedene Datentypen annehmen kann
 
@@ -40,7 +40,7 @@ let text2;
 // istWahr ist eine Variable vom Typ boolean
 // boolean-Variablen können nur die Werte true oder false annehmen
 let istWahr = true;
-
+//#endregion
 
 //#region Zuweisungsoperatoren
 // Zuweisungsoperatoren

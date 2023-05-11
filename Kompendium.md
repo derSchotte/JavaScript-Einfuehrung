@@ -91,3 +91,25 @@ do {
     i++;
 } while (i < 10);
 ```
+
+### Arrays
+
+```javascript
+_Array mit 5 Elementen_
+let array = [1, 2, 3, 4, 5];
+
+_Array ohne Elemente_
+let array2 = [];
+```
+
+### Objekte
+
+```javascript
+let objekt = {
+    key: 'value',
+    key2: 'value2',
+    key3: 'value3',
+    key4: 'value4',
+    key5: 'value5',
+};
+```

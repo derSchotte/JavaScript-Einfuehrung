@@ -221,7 +221,7 @@ istWahr || false;
 !istWahr;
 //#endregion
 
-
+//#region Schleifen
 // Scheifen
 // for-Schleife
 // Die for-Schleife wird verwendet, wenn die Anzahl der Durchläufe bekannt ist
@@ -292,3 +292,80 @@ do {
     console.log(k);
     k++;
 } while (k < 10);
+//#endregion
+
+//#region Konkatiniation
+let vorName = "Max";
+let nachName = "Mustermann";
+let alter = 42;
+
+
+// Konkatination und Ausgabe in der Console
+// Der + Operator kann auch zum Verketten von Strings verwendet werden
+// Dabei werden die Strings aneinandergehängt
+console.log(vorName + " " + nachName + " ist " + alter + " Jahre alt.");
+
+// Template Strings
+// Template Strings sind Strings, die Variablen enthalten können
+// Sie werden mit Backticks ( ` ) definiert. (links neben der Backspace-Taste)
+// Variablen werden mit ${variable} in den String eingefügt
+// Template Strings können auch Zeilenumbrüche enthalten "\n"
+
+console.log(`${vorName} ${nachName} ist ${alter} Jahre alt.`);
+//#endregion
+
+//#region Arrays
+// Arrays
+// Arrays sind Listen, die mehrere Werte enthalten können
+// Sie werden mit eckigen Klammern definiert
+// Die Werte werden mit Kommas getrennt
+// Die Werte können verschiedene Datentypen haben
+let array = [1, 2, 3, 4, 5];
+let array2 = ["Hallo", "Welt", "!"];
+let array3 = [1, "Hallo", true, 3.14];
+
+// Arrays können auch ohne Werte definiert werden
+let array4 = [];
+
+// Arrays können auch Variablen enthalten
+let array5 = [array, array2, array3];
+
+// Arrays können auch Objekte enthalten
+let array6 = [{ name: "Max" }, { name: "Moritz" }];
+
+// Arrays können auch Funktionen enthalten
+let array7 = [function () { console.log("Hallo Welt!"); }];
+//#endregion
+
+//#region Objekte
+// Objekte
+// Objekte sind Listen, die mehrere Werte enthalten können
+// Sie werden mit geschweiften Klammern definiert
+// Die Werte werden mit Kommas getrennt
+// Die Werte werden als Schlüssel-Wert-Paare definiert
+// Der Schlüssel wird mit einem Doppelpunkt vom Wert getrennt
+// Die Schlüssel-Wert-Paare werden mit Kommas getrennt
+// Die Werte können verschiedene Datentypen haben
+let objekt = { name: "Max", alter: 42, istWahr: true, pi: 3.14 };
+
+// Objekte können auch ohne Werte definiert werden
+let objekt2 = {};
+
+// Objekte können auch Variablen enthalten
+let objekt3 = { name: objekt.name, alter: objekt.alter };
+
+// Objekte können auch Arrays enthalten
+let objekt4 = { array: array, array2: array2, array3: array3 };
+
+// Objekte können auch Objekte enthalten
+let objekt5 = { objekt: objekt, objekt2: objekt2, objekt3: objekt3 };
+
+// Objekte können auch Funktionen enthalten
+let objekt6 = { funktion: function () { console.log("Hallo Welt!"); } };
+
+// Objekte können auch Methoden enthalten
+let objekt7 = { methode: function () { console.log("Hallo Welt!"); } };
+
+// Objekte können auch mit dem new-Operator erstellt werden
+let objekt8 = new Object();
+//#endregion

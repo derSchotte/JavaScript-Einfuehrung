@@ -12,6 +12,8 @@ var variablenNamen = 'Wert';
 
 ### Zuweisungsoperatoren
 
+#### Genauere Erklärung findet man in der grundlagen.js
+
 ```quote
 =   <-- Zuweisungsoperator
 +=  <-- Zuweisungsoperator + Addition
@@ -19,6 +21,8 @@ var variablenNamen = 'Wert';
 *=  <-- Zuweisungsoperator * Multiplikation
 /=  <-- Zuweisungsoperator / Division
 %=  <-- Zuweisungsoperator % Modulo
+++  <-- Zuweisungsoperator +1
+--  <-- Zuweisungsoperator -1
 ```
 
 ### Vergleichsoperatoren

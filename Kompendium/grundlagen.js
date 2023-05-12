@@ -369,3 +369,4 @@ let objekt7 = { methode: function () { console.log("Hallo Welt!"); } };
 // Objekte können auch mit dem new-Operator erstellt werden
 let objekt8 = new Object();
 //#endregion
+

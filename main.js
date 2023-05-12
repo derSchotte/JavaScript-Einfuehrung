@@ -110,16 +110,3 @@ function DoWhileScheife() {
     } while (i <= 10);
 }
 
-function FizzBuzz() {
-    for (let i = 1; i <= 100; i++) {
-        if (i % 15 == 0) {
-            document.getElementById("ausgabe").innerHTML += "FizzBuzz<br>";
-        } else if (i % 3 == 0) {
-            document.getElementById("ausgabe").innerHTML += "Fizz<br>";
-        } else if (i % 5 == 0) {
-            document.getElementById("ausgabe").innerHTML += "Buzz<br>";
-        } else {
-            document.getElementById("ausgabe").innerHTML += i + "<br>";
-        }
-    }
-}

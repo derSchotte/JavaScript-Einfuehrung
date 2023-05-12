@@ -6,6 +6,31 @@ let container = document.getElementById("container").innerHTML = `
 `;
 
 FizzBuzz();
+
+function FizzBuzz() {
+    for (let i = 1; i < 101; i++) {
+        // Kann ich i durch 15 restlos teilen? Ja / Nein
+        if (i % 15 == 0) {
+            document.getElementById("ausgabe").innerHTML += "FizzBuzz<br>";
+            // Kann ich i durch 5 restlos teilen? Ja / Nein
+        } else if (i % 5 == 0) {
+            document.getElementById("ausgabe").innerHTML += "Fizz<br>";
+            // Kann ich i durch 3 restlos teilen? Ja / Nein
+        } else if (i % 3 == 0) {
+            document.getElementById("ausgabe").innerHTML += "Buzz<br>";
+            // Führe else aus wenn alle obigen if-Anweisungen false sind.
+        } else {
+            document.getElementById("ausgabe").innerHTML += `${i}<br>`;
+        }
+    }
+}
+
+// let text = `${i} <br>`
+// let text = i + "<br>"
+// console.log()
+
+
+//#region Erklaerungen
 // WhileScheife();
 // DoWhileScheife();
 // ForSchleife();
@@ -110,3 +135,4 @@ function DoWhileScheife() {
     } while (i <= 10);
 }
 
+//#endregion

@@ -43,3 +43,21 @@ Erstellen sie dementsprechend eine Variable für die Länge und eine Variable f�
 
 Geben sie die Fläche in der Konsole aus.
 ```
+
+## Übung 5
+
+_FizzBuzz Berechnung_
+
+```quote
+Erstelle ein JavaScript Programm, welches die Zahlen von 1 bis 100 ausgibt.
+Bei jeder Zahl, welche durch 3 teilbar ist, soll "Fizz" ausgegeben werden.
+Bei jeder Zahl, welche durch 5 teilbar ist, soll "Buzz" ausgegeben werden.
+Bei jeder Zahl, welche durch 3 und 5 teilbar ist, soll "FizzBuzz" ausgegeben werden.
+
+Die Ausgabe kann in der Konsole erfolgen.
+BONUS: Ausgabe per DOM Manipulation.
+```
+
+```
+
+```

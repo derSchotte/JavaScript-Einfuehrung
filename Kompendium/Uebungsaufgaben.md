@@ -58,6 +58,24 @@ Die Ausgabe kann in der Konsole erfolgen.
 BONUS: Ausgabe per DOM Manipulation.
 ```
 
+## Übung 6
+
+```
+Bestimme den Flächeninhalt eines Rechtecks. Der Websitenbesucher soll über Input-Felder (type number) Höhe und Länge bestimmen können. User soll mit Button die Rechnung anstoßen
+
+    1) Hole die Akteure (z.b. Button) über die DOM-Methoden (z.b. query-Selector) -- achte auf das rechte Einben des Scripts (etwa defer)
+
+    2) registriere eine function für das click-event des Buttons. Rufe die addEventListener-Funktion des Buttons auf.
+
+    3) erzeuge (mittels der registrierten EventListener-Funktion) eine user-sichtbare Antwort im DOM
 ```
 
+## Übung 7
+
+```
+Schreibe ein JavaScript Programm, welches eine Funktionsfähige Uhr per DOM-Manipulation auf einer HTML Seite ausgibt.
+Erstelle hierzu 3 Variablen für Stunden, Minuten und Sekunden.
+Erstelle eine Funktion, welche die aktuelle Uhrzeit in die Variablen schreibt.
+Und diese dann in der HTML Seite in ein vorher definiertes Div per ID schreibt.
+Benutze setInterval(function, 1000) um die Uhrzeit alle 1000ms (1s) zu aktualisieren.
 ```

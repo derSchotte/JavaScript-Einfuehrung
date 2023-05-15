@@ -1,13 +1,17 @@
 // Zugriff auf das Element mit der ID "container"
 let container = document.getElementById("container").innerHTML = `
 <h1>Ausgabe:</h1>
-<p>Erstelle ein JavaScript Programm, welches die Zahlen von 1 bis 100 ausgibt. Bei jeder Zahl, welche durch 3 teilbar ist, soll "Fizz" ausgegeben werden. Bei jeder Zahl, welche durch 5 teilbar ist, soll "Buzz" ausgegeben werden. Bei jeder Zahl, welche durch 3 und 5 teilbar ist, soll "FizzBuzz" ausgegeben werden.</p>
+
+<p>Bitte geben Sie die Länge und Breite der zu berechnenden Fläche an</p>
+<input type="number" id="laenge" placeholder="Länge">
+<input type="number" id="breite" placeholder="Breite">
+<button id="BerechnenBTN">Berechnen</button>
+
 <div id="ausgabe"></div>
 `;
 
 // FizzBuzz();
-Test();
-
+//#region FizzBuzz
 function FizzBuzz() {
     for (let i = 1; i < 101; i++) {
         // Kann ich i durch 15 restlos teilen? Ja / Nein
@@ -25,11 +29,7 @@ function FizzBuzz() {
         }
     }
 }
-
-// let text = `${i} <br>`
-// let text = i + "<br>"
-// console.log()
-
+//#endregion
 
 //#region Erklaerungen
 // WhileScheife();
@@ -38,75 +38,73 @@ function FizzBuzz() {
 
 
 
-if (Bedingung) {
-    // Anweisung
-}
+// if (Bedingung) {
+//     // Anweisung
+// }
 
-if (Bedingung) {
-    // Anweisung
-    if (Bedingung) {
-        // Anweisung
-    } else {
-        // Anweisung
-    }
-}
+// if (Bedingung) {
+//     // Anweisung
+//     if (Bedingung) {
+//         // Anweisung
+//     } else {
+//         // Anweisung
+//     }
+// }
 
-// Bei einer && Abfrage muss jeweils die Linke sowie die Rechte Seite ein true ergeben.
-// Bei einer || Abfrage muss nur eine Seite ein true ergeben.
-if (Bedingung && Bedingung || Bedingung) {
-    // Anweisung
-}
+// // Bei einer && Abfrage muss jeweils die Linke sowie die Rechte Seite ein true ergeben.
+// // Bei einer || Abfrage muss nur eine Seite ein true ergeben.
+// if (Bedingung && Bedingung || Bedingung) {
+//     // Anweisung
+// }
 
-if (!Bedingung && Bedingung) {
-    // Anweisung
-}
-
-
-if (Bedingung) {
-    // Anweisung
-} else {
-    // Anweisung
-}
-
-
-if (Bedingung) {
-    // Anweisung
-} else if (Bedingung) {
-    // Anweisung
-} else {
-    // Anweisung
-}
-
-
-//for Schleife
-//Variable; if Bedingung; Iteration;
-function ForSchleife() {
-    for (let i = 1; i < 11; i++) {
-        document.getElementById("ausgabe").innerHTML += `${i}<br>`;
-    }
-}
-
-// for (let i = 0; i < 10; i++) {
+// if (!Bedingung && Bedingung) {
 //     // Anweisung
 // }
 
 
-// while Schleife
-let x = 0;
-while (x < 10) {
-    document.getElementById("ausgabe").innerHTML += `${i}<br>`;
-    x++;
-}
-
-// do while Schleife
-let y = 0;
-
-do {
-    document.getElementById("ausgabe").innerHTML += `${i}<br>`;
-    y++;
-} while (y < 10);
+// if (Bedingung) {
+//     // Anweisung
+// } else {
+//     // Anweisung
+// }
 
 
+// if (Bedingung) {
+//     // Anweisung
+// } else if (Bedingung) {
+//     // Anweisung
+// } else {
+//     // Anweisung
+// }
+
+
+// //for Schleife
+// //Variable; if Bedingung; Iteration;
+// function ForSchleife() {
+//     for (let i = 1; i < 11; i++) {
+//         document.getElementById("ausgabe").innerHTML += `${i}<br>`;
+//     }
+// }
+
+// // for (let i = 0; i < 10; i++) {
+// //     // Anweisung
+// // }
+
+
+// // while Schleife
+// let x = 0;
+// while (x < 10) {
+//     document.getElementById("ausgabe").innerHTML += `${i}<br>`;
+//     x++;
+// }
+
+// // do while Schleife
+// let y = 0;
+
+// do {
+//     document.getElementById("ausgabe").innerHTML += `${i}<br>`;
+//     y++;
+// } while (y < 10);
 
 
 
@@ -118,31 +116,42 @@ do {
 
 
 
-function WhileScheife() {
-    let i = 1;
-    while (i <= 10) {
-        document.getElementById("ausgabe").innerHTML += `${i}<br>`;
-        i++;
-    }
-}
 
-function DoWhileScheife() {
-    let i = 1;
-    do {
-        document.getElementById("ausgabe").innerHTML += `${i}<br>`;
-        i++;
-    } while (i <= 10);
-}
+
+// function WhileScheife() {
+//     let i = 1;
+//     while (i <= 10) {
+//         document.getElementById("ausgabe").innerHTML += `${i}<br>`;
+//         i++;
+//     }
+// }
+
+// function DoWhileScheife() {
+//     let i = 1;
+//     do {
+//         document.getElementById("ausgabe").innerHTML += `${i}<br>`;
+//         i++;
+//     } while (i <= 10);
+// }
 
 //#endregion
 
-function Test() {
-    let zahl = "1010"; // Binärzahl
-    let basis = 2; // Basis 2 (Binär)
+//#region Flaeschenberechnung
+document.getElementById("BerechnenBTN").addEventListener("click", Berechnung);
 
-    // Konvertiere die Zahl zur Basis 10
-    let ergebnis = parseInt(zahl, basis);
+function Berechnung() {
+    let laenge = parseFloat(document.getElementById("laenge").value);
+    let breite = parseFloat(document.getElementById("breite").value);
 
-    document.getElementById("ausgabe").innerHTML += `${ergebnis}<br>`;
-    console.log(ergebnis); // Ausgabe: 10
+    var Berechnung = laenge * breite;
+
+    let ergebnis = document.getElementById("ausgabe");
+
+    if (ergebnis !== null) {
+        ergebnis.textContent = "Sie haben keine oder unvollständige Werte eingegeben"
+    } else {
+        ergebnis.textContent = `Das Ergebnis ist: ${Berechnung} cm²`;
+    }
 }
+
+//#endregion

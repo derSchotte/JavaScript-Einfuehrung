@@ -5,7 +5,7 @@ let container = document.getElementById("container").innerHTML = `
 <div id="ausgabe"></div>
 `;
 
-FizzBuzz();
+// FizzBuzz();
 
 function FizzBuzz() {
     for (let i = 1; i < 101; i++) {
@@ -33,7 +33,7 @@ function FizzBuzz() {
 //#region Erklaerungen
 // WhileScheife();
 // DoWhileScheife();
-// ForSchleife();
+ForSchleife();
 
 let email;
 let email2;

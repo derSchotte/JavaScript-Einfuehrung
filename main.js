@@ -6,6 +6,7 @@ let container = document.getElementById("container").innerHTML = `
 `;
 
 // FizzBuzz();
+Test();
 
 function FizzBuzz() {
     for (let i = 1; i < 101; i++) {
@@ -33,10 +34,8 @@ function FizzBuzz() {
 //#region Erklaerungen
 // WhileScheife();
 // DoWhileScheife();
-ForSchleife();
+// ForSchleife();
 
-let email;
-let email2;
 
 
 if (Bedingung) {
@@ -136,3 +135,14 @@ function DoWhileScheife() {
 }
 
 //#endregion
+
+function Test() {
+    let zahl = "1010"; // Binärzahl
+    let basis = 2; // Basis 2 (Binär)
+
+    // Konvertiere die Zahl zur Basis 10
+    let ergebnis = parseInt(zahl, basis);
+
+    document.getElementById("ausgabe").innerHTML += `${ergebnis}<br>`;
+    console.log(ergebnis); // Ausgabe: 10
+}

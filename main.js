@@ -1,12 +1,6 @@
 // Zugriff auf das Element mit der ID "container"
 let container = document.getElementById("container").innerHTML = `
 <h1>Ausgabe:</h1>
-
-<p>Bitte geben Sie die Länge und Breite der zu berechnenden Fläche an</p>
-<input type="number" id="laenge" placeholder="Länge">
-<input type="number" id="breite" placeholder="Breite">
-<button id="BerechnenBTN">Berechnen</button>
-
 <div id="ausgabe"></div>
 `;
 
@@ -137,6 +131,13 @@ function FizzBuzz() {
 //#endregion
 
 //#region Flaeschenberechnung
+{/* <p>Bitte geben Sie die Länge und Breite der zu berechnenden Fläche an</p>
+<input type="number" id="laenge" placeholder="Länge">
+<input type="number" id="breite" placeholder="Breite">
+<button id="BerechnenBTN">Berechnen</button>
+
+
+
 document.getElementById("BerechnenBTN").addEventListener("click", Berechnung);
 
 function Berechnung() {
@@ -152,6 +153,33 @@ function Berechnung() {
     } else {
         ergebnis.textContent = `Das Ergebnis ist: ${Berechnung} cm²`;
     }
-}
+} */}
 
 //#endregion
+
+
+// Uhrzeit ausgeben
+function Uhrzeit() {
+    var element = document.getElementById("ausgabe");
+    var jetzt = new Date();
+    var stunden = jetzt.getHours();
+    var minuten = jetzt.getMinutes();
+    var sekunden = jetzt.getSeconds();
+
+    if (stunden < 10) {
+        stunden = "0" + stunden;
+    }
+
+    if (minuten < 10) {
+        minuten = "0" + minuten;
+    }
+
+    if (sekunden < 10) {
+        sekunden = "0" + sekunden;
+    }
+
+    var timeString = `${stunden}:${minuten}:${sekunden}`;
+    element.textContent = timeString;
+}
+
+setInterval(Uhrzeit, 1000);

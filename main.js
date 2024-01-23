@@ -1,8 +1,47 @@
+import "./testLab.js";
+
 // Zugriff auf das Element mit der ID "container"
 let container = document.getElementById("container").innerHTML = `
-<h1>Ausgabe:</h1>
-<div id="ausgabe"></div>
+<div id="app">
+    <div id="title">
+        <h1>Simple Calc</h1>
+    </div>
+    <div id="body">
+        <div id="eingabe">
+        <label>Zahl 1:</label>
+        <input type="number" id="zahl1" placeholder="Zahl 1">
+        <label>Zahl 2:</label>
+        <input type="number" id="zahl2" placeholder="Zahl 2">
+        <div class="operator">
+        <label>Operator:</label>
+            <select id="operator">
+                <option value="">Bitte wählen</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+        </div>
+        <button id="berechnen" onclick="calculator()">Berechnen</button>
+        </div>
+        <div id="ergebnis"></div>
+    </div>
+</div>
 `;
+
+{/* <h1>Ausgabe:</h1>
+<div id="ausgabe"></div>
+
+<label>EMail:</label>
+<input type="email" id="email" placeholder="E.Mail@yourDomain.com">
+<label>EMail Wiederholen:</label>
+<input type="email-correct" id="email" placeholder="E.Mail@yourDomain.com">
+<div id="ergebnis"></div> */}
+
+{/* <div class="email">
+            <label>Email</label>
+            <input type="email" id="email" />
+        </div> */}
 
 // FizzBuzz();
 //#region FizzBuzz
@@ -157,29 +196,86 @@ function Berechnung() {
 
 //#endregion
 
-
+//#region Uhrzeit
 // Uhrzeit ausgeben
-function Uhrzeit() {
-    var element = document.getElementById("ausgabe");
-    var jetzt = new Date();
-    var stunden = jetzt.getHours();
-    var minuten = jetzt.getMinutes();
-    var sekunden = jetzt.getSeconds();
+// function Uhrzeit() {
+//     var element = document.getElementById("ausgabe");
+//     var jetzt = new Date();
+//     var stunden = jetzt.getHours();
+//     var minuten = jetzt.getMinutes();
+//     var sekunden = jetzt.getSeconds();
 
-    if (stunden < 10) {
-        stunden = "0" + stunden;
+//     if (stunden < 10) {
+//         stunden = "0" + stunden;
+//     }
+
+//     if (minuten < 10) {
+//         minuten = "0" + minuten;
+//     }
+
+//     if (sekunden < 10) {
+//         sekunden = "0" + sekunden;
+//     }
+
+//     var timeString = `${stunden}:${minuten}:${sekunden}`;
+//     element.textContent = timeString;
+// }
+
+// setInterval(Uhrzeit, 1000);
+
+//#endregion
+
+// #region Taschenrechner
+// function calculator
+document.getElementById("berechnen").addEventListener("click", calculator);
+
+function calculator() {
+    let zahl1 = parseFloat(document.getElementById("zahl1").value);
+    let zahl2 = parseFloat(document.getElementById("zahl2").value);
+    let operator = document.getElementById("operator").value;
+
+    let ergebnis = document.getElementById("ergebnis");
+
+    // Check if input values are valid
+    if (isNaN(zahl1) || isNaN(zahl2)) {
+        ergebnis.textContent = "Bitte geben Sie gültige Zahlen ein";
+        return;
     }
 
-    if (minuten < 10) {
-        minuten = "0" + minuten;
+    // Perform calculation based on operator
+    if (operator == "+") {
+        ergebnis.textContent = zahl1 + zahl2;
+    } else if (operator == "-") {
+        ergebnis.textContent = zahl1 - zahl2;
+    } else if (operator == "*") {
+        ergebnis.textContent = zahl1 * zahl2;
+    } else if (operator == "/") {
+        if (zahl2 == 0) {
+            ergebnis.textContent = "Division durch Null ist nicht erlaubt";
+            return;
+        }
+        ergebnis.textContent = zahl1 / zahl2;
+    } else {
+        ergebnis.textContent = "Bitte geben Sie einen gültigen Operator ein";
     }
+}
+//#endregion
 
-    if (sekunden < 10) {
-        sekunden = "0" + sekunden;
+//#region Email-Adresse überprüfen
+let emailInput = document.getElementById("email");
+emailInput.addEventListener("input", checkEmail);
+
+function checkEmail() {
+    let email = document.getElementById("email").value;
+    let ergebnis = document.getElementById("ergebnis");
+
+    if (email != "") {
+        if (email.indexOf("@") !== -1 && email.lastIndexOf(".") !== -1 && email.lastIndexOf(".") > email.indexOf("@")) {
+            ergebnis.textContent = "Gültige Email-Adresse!";
+        } else {
+            ergebnis.textContent = "Keine gültige Email-Adresse ein!";
+        }
     }
-
-    var timeString = `${stunden}:${minuten}:${sekunden}`;
-    element.textContent = timeString;
 }
 
-setInterval(Uhrzeit, 1000);
+//#endregion

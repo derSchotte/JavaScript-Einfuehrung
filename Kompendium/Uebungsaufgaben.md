@@ -79,3 +79,15 @@ Erstelle eine Funktion, welche die aktuelle Uhrzeit in die Variablen schreibt.
 Und diese dann in der HTML Seite in ein vorher definiertes Div per ID schreibt.
 Benutze setInterval(function, 1000) um die Uhrzeit alle 1000ms (1s) zu aktualisieren.
 ```
+
+## Übung 8
+
+```
+Schreibe einen funktionierenden Taschenrechner per DOM-Manipulation auf einer HTML Seite.
+Erstelle die dazu Benötigten Variablen und Funktionen sowie HTML Elemente.
+Der Taschenrechner sollte die normalen Rechenoperationen können. (+, -, *, /)
+Baue eine Möglichkeit ein, eine Teilung durch 0 zu verhindern und anschließend eine Fehlermeldung auszugeben.
+Achte darauf das der Taschenrechner auch mit Kommazahlen umgehen kann.
+
+BONUS: Erstelle eine style.css um den Taschenrechner optisch ansprechend zu gestalten.
+```
